@@ -1,5 +1,4 @@
 package com.example.mynutritionapp;
-
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -39,4 +38,3 @@ class DietDictionaryComponent extends RecyclerView.ViewHolder {
         this.linearLayout_2 = linearLayout_2;
     }
 }
-

@@ -47,6 +47,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
         switch (viewType) {
             case ContactPosition:
                 View contactLayout = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_contact_layout, parent, false);
+
                 return new ContactComponent(contactLayout);
             case DailyStatusPosition:
                 View dailyStatusLayout = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_daily_status_layout, parent, false);
@@ -68,9 +69,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
             case ContactPosition:
                 String text_0
                         = components.get(position).getText();
+
                 ((ContactComponent) holder).setView(text_0);
                 ((ContactComponent) holder).getLinearLayout()
                         .setOnClickListener(
+
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -84,6 +87,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
                 ((DailyStatusComponent) holder).setView(text_1);
                 ((DailyStatusComponent) holder)
                         .getLinearLayout().setOnClickListener(
+
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -94,6 +98,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
             case DietDictionaryPosition:
                 String text_2
                         = components.get(position).getText();
+
                 ((DietDictionaryComponent) holder).setView(text_2);
                 ((DietDictionaryComponent) holder)
                         .getLinearLayout().setOnClickListener(
@@ -110,6 +115,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
                 ((FoodTrackingComponent) holder).setView(text_3);
                 ((FoodTrackingComponent) holder)
                         .getLinearLayout().setOnClickListener(
+
                         new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
@@ -119,6 +125,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter {
                 break;
             default:
                 return;
+        }
         }
     }
 

@@ -45,4 +45,5 @@
         android:layout_height="1dp"
         android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/linearlayout_3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
