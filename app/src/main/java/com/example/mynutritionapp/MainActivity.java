@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayoutManager layoutManager;
     private RecyclerViewAdapter adapter;
     private RecyclerView recyclerView;
-    private TextView main_LBL_hello;
+
     ArrayList<Component> components;
 
     @Override
@@ -33,6 +33,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void findViews() {
         recyclerView = findViewById(R.id.recyclerView);
-        main_LBL_hello = findViewById(R.id.main_LBL_hello);
+
     }
 }
